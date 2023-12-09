@@ -1,0 +1,122 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #436814;
+}
+
+header {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    max-height: 160px;
+    margin-right: auto;
+}
+
+nav {
+    padding: 10px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+li {
+    margin-right: 30px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    display: inline-block;
+}
+
+@media screen and (max-width: 600px) {
+    header {
+        flex-direction: column;
+        /* Empilha os elementos verticalmente */
+        text-align: center;
+    }
+
+    .logo img {
+        margin: 0;
+        /* Remove a margem direita para centralizar a logo */
+    }
+
+    nav {
+        margin-top: 10px;
+    }
+
+    ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    li {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+}
+
+section .text {
+    width: 30%;
+    float: left;
+    margin-top: 20px;
+    padding: 10px;
+    color: white;
+    transition: text-shadow 0.3s ease;
+}
+
+section .text:hover {
+    text-shadow: 2px 2px 5px rgba(230, 189, 189, 0.8);
+}
+
+section .imagem_principal img {
+    position: absolute;
+    right: 0;
+    width: 70%;
+    height: 480px;
+}
+
+section .compre_aqui {
+    background-color: rgb(247, 238, 238);
+    color: rgb(97, 42, 42);
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+section .compre_aqui:hover {
+    background-color: #ccafaf;
+}
+
+/* Estilos para tamanhos de tela menores, como celulares */
+@media screen and (max-width: 600px) {
+    section .text {
+        width: 100%;
+        float: none;
+    }
+
+    section .imagem_principal img {
+        width: 100%;
+        height: auto;
+        position: static;
+    }
+}

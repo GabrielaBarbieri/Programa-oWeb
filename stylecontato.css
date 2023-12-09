@@ -1,0 +1,23 @@
+.centralized-section {
+    text-align: center;
+    margin: 20px;
+}
+
+.contact-table {
+    border-collapse: collapse;
+    margin: 20px auto;
+    width: 100%;
+    /* Alterado para 100% para ocupar toda a largura em telas pequenas */
+}
+
+.contact-person {
+    border: 1px solid #ccc;
+    padding: 10px;
+    max-width: 300px;
+    /* Ajustado para um valor mais significativo */
+    text-align: left;
+}
+
+.contact-person h3 {
+    margin-bottom: 5px;
+}

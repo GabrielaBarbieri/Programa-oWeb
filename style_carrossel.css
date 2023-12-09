@@ -1,0 +1,100 @@
+    .carousel-container {
+        width: 60%;
+        margin: 0 auto;
+        overflow: hidden;
+        position: relative;
+        border: 2px solid #ddd;
+        border-radius: 5px;
+    }
+
+    .carousel-wrapper {
+        display: flex;
+        transition: transform 0.5s ease-in-out;
+    }
+
+    .carousel-item {
+        position: relative;
+        flex: 0 0 100%;
+        box-sizing: border-box;
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* Botões de navegação do carrossel */
+    .carousel-prev,
+    .carousel-next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 24px;
+        color: white;
+        background-color: #333;
+        border: none;
+        padding: 10px;
+        border-radius: 5px;
+    }
+
+    .carousel-prev {
+        left: 10px;
+    }
+
+    .carousel-next {
+        right: 10px;
+    }
+
+    /* Modificação na classe .carousel-item para ocupar 100% da largura */
+    .carousel-item {
+        position: relative;
+        flex: 0 0 100%;
+        box-sizing: border-box;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        /* Adiciona uma coluna para empilhar elementos verticalmente */
+        align-items: center;
+        text-align: center;
+        /* Centraliza o texto e o botão */
+    }
+
+    /* Estilos para o texto e botão na classe .carousel-item */
+    .carousel-item p {
+        margin-top: 10px;
+        font-size: 16px;
+        color: rgb(255, 255, 255);
+        /* Cor do texto */
+    }
+
+    .carousel-item button {
+        background-color: #4CAF50;
+        /* Cor de fundo do botão */
+        color: white;
+        /* Cor do texto no botão */
+        border: none;
+        padding: 10px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+    .carousel-item button:hover {
+        background-color: #45a049;
+        /* Cor de fundo do botão ao passar o mouse */
+    }
+
+    @media (max-width: 767px) {
+        .carousel-container {
+            width: 100%;
+        }
+
+        .carousel-item {
+            flex: 0 0 100%;
+        }
+
+        .carousel-prev,
+        .carousel-next {
+            font-size: 18px;
+        }
+    }
