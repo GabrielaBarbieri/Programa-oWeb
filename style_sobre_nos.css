@@ -1,0 +1,18 @@
+section {
+    width: 60%;
+    /* Ajuste conforme necessário */
+    margin: 0 auto;
+    /* Centraliza horizontalmente */
+    text-align: justify;
+    color: white;
+    padding: 20px;
+    /* Adicione preenchimento para um visual mais espaçoso */
+    transition: box-shadow 0.3s;
+    /* Adiciona transição ao efeito de relevo */
+
+}
+
+section:hover {
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    /* Efeito de relevo quando o mouse passa por cima */
+}
